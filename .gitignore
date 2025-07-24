@@ -1,0 +1,6 @@
+*.code-workspace
+*.htaccess
+robots.txt
+/node_modules/
+*.css
+.env

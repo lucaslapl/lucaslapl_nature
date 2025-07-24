@@ -1,0 +1,218 @@
+/******* Header **********/
+
+#oiseaux-head {
+  width: 95%;
+  margin: 64px auto;
+
+  h1 {
+    margin-left: 200px;
+    font-size: 2.4em;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 245px;
+      height: 55px;
+      background-color: #373737;
+      top: -20px;
+      left: -40px;
+      z-index: -1;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  #oiseaux-head h1 {
+    margin-left: 10%;
+  }
+}
+
+/******** Liste Oiseaux ********/
+
+#oiseaux-list {
+  width: 95%;
+  margin: 64px auto;
+
+  .filters {
+    background-color: #393939;
+  }
+
+  ul {
+    margin: 32px 120px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 100%;
+      background-color: #373737;
+      top: 0px;
+      left: -35px;
+      z-index: -1;
+    }
+
+    li {
+      padding: 7px 10px;
+      border-radius: 5px;
+      transition: .1s;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #393939;
+      }
+    }
+  }
+}
+
+.li-active {
+  border: 1px solid #69c874;
+}
+
+.birdname {
+  width: 580px;
+  font-size: 1.1em;
+}
+
+.fa-camera {
+  opacity: 0.8;
+  float: right;
+}
+
+.birdcontent {
+  display: none;
+  position: fixed;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  right: -51%;
+  background-color: #333;
+  z-index: 99;
+  box-shadow: 0px 0px 20px #202020;
+  cursor: default;
+  overflow: scroll;
+
+  .fa-angles-right {
+    color: #ddd;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  .birdinfo {
+    margin: 32px;
+
+    h1 {
+      font-size: 2.7em;
+    }
+
+    .bird-desc {
+      padding: 5px 20px;
+      box-shadow: inset 0px 0px 10px #0000005c;
+      background: #2f2f2f;
+    }
+  }
+}
+
+.commun {
+  background-color: #008400;
+  padding: 5px 11px;
+  border-radius: 13px;
+}
+
+.peu-commun {
+  background-color: #848200;
+  padding: 5px 11px;
+  border-radius: 13px;
+}
+
+.rare {
+  background-color: #844a00;
+  padding: 5px 11px;
+  border-radius: 13px;
+}
+
+.tres-rare {
+  background-color: #840000;
+  padding: 5px 11px;
+  border-radius: 13px;
+}
+
+.birdcontent .birdinfo p > a {
+  color: #6de862;
+  text-decoration: underline;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+@media (max-width: 1500px) {
+  #oiseaux-list {
+    margin: unset;
+
+    ul {
+      margin: 32px 45px;
+    }
+  }
+
+  .famille {
+    display: none;
+  }
+}
+
+@media (max-width: 945px) {
+  .birdcontent {
+    width: 75%;
+  }
+}
+
+@media (max-width: 789px) {
+  #oiseaux-list {
+    width: 100%;
+
+    ul li {
+      margin: 7px 0;
+      padding: 10px;
+      border: 1px solid #313131;
+    }
+  }
+
+  .birdcontent {
+    width: 100%;
+
+    .fa-angles-right {
+      color: #fff;
+      font-size: 4em;
+      margin: unset;
+      padding: 7px;
+    }
+  }
+
+  .birdinfo span {
+    text-wrap: nowrap;
+    line-height: 2.5em;
+  }
+}
+
+@media (max-width: 640px) {
+  #oiseaux-list ul {
+    margin: 32px 10px;
+
+    &::before {
+      left: -30px;
+    }
+  }
+
+  .birdcontent .fa-angles-right {
+    position: fixed;
+    background-color: #0000004a;
+    z-index: 100;
+  }
+
+  .birdinfo h1 {
+    margin-top: 80px;
+  }
+
+  .img-status img {
+    width: 100%;
+  }
+}

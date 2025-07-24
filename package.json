@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "**Webdesigner & Naturaliste passionné**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch _scss:_css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucaslapl/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucaslapl/portfolio/issues"
+  },
+  "homepage": "https://github.com/lucaslapl/portfolio#readme",
+  "devDependencies": {
+    "sass": "^1.89.2"
+  }
+}
