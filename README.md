@@ -6,10 +6,10 @@
 Je m’appelle Lucas, 27 ans, diplômé d’un BTS GPN et d’une Licence EVMAN. Passionné de nature et de photographie, j’ai créé ce site pour allier mes deux centres d’intérêt et présenter mes observations et réalisations.
 
 ## Contenu  
-- **Observations** : Oiseaux (en cours), Lépidoptères  
+- **Observations** : Oiseaux, Lépidoptères  
 - **Projets** :  
-  - *Le Marais sous tous ses objectifs* – expo photo + animation pour la RNR et la LPO  
-  - *Laisser la nature s’exprimer* – exposition à La Ferme du Pain’Son  
+  - *reconnexion.tf* – Plateforme communautaire au service de la francophonie sur Team Fortress 2  
+  - *Espaces Naturels* – Cartographie interactive et participative des espaces naturels français  
 
 ## Tech 
 Technologies : HTML, CSS, JS / PHP, PDO MySQL
