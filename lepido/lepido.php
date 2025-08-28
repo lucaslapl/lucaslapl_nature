@@ -5,10 +5,10 @@ include("../_inc/config.php");
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-	<meta property="og:url" content="https://lucaslaplanche.fr/lepido/lepido.php">
+	<meta property="og:url" content="https://nature.lucaslaplanche.fr/lepido/lepido.php">
     <meta property="og:title" content="Lucas LAPLANCHE - Lépidoptères">
     <meta property="og:description" content="Découvrez mes différentes observations et photographies de lépidoptères en France.">
-    <meta property="og:image" content="https://lucaslaplanche.fr/_imgs/avatar.jpg">
+    <meta property="og:image" content="https://nature.lucaslaplanche.fr/_imgs/avatar.jpg">
 	<meta property="og:type" content="website">
 
 	<meta name="author" content="Lucas Laplanche">
@@ -31,14 +31,14 @@ include("../_inc/config.php");
 <nav>
     <div class="flex">
         <img class="nav-avatar" src="../_imgs/favicon2857.png">
-        <a href="https://lucaslaplanche.fr/">Lucas LAPLANCHE</a>
+        <a href="https://nature.lucaslaplanche.fr/">Lucas LAPLANCHE</a>
         <span style="margin: 7px 10px;">/</span>
-        <a href="https://lucaslaplanche.fr/lepido/lepido.php">Lépidoptères 🦋</a>
+        <a href="https://nature.lucaslaplanche.fr/lepido/lepido.php">Lépidoptères 🦋</a>
     </div>
 </nav>
 
 <section id="lepido-head">
-     <h1>Lépidoptères 🦋</h1>
+    <h1>Lépidoptères 🦋</h1>
 </section>
 
 <section id="lepido-list">
@@ -115,12 +115,12 @@ include("../_inc/config.php");
 	<script src="../_js/simple-lightbox.jquery.js"></script>
 	<script>
 		$(document).ready(function() {
-		  var lightbox = $('.lepidocontent a').simpleLightbox({
-			captions: true,
-			showCounter: false,
-			nav: false,
-			enableKeyboard: false,
-			scrollZoom: false
+			var lightbox = $('.lepidocontent a').simpleLightbox({
+				captions: true,
+				showCounter: false,
+				nav: false,
+				enableKeyboard: false,
+				scrollZoom: false
 			});
 		});
 	</script>
