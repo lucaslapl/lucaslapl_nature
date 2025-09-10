@@ -1,0 +1,14 @@
+$color_1: #6de862;
+$background-color_1: #393939;
+
+/********** Footer **********/
+footer {
+	width: 100%;
+	padding: 10px 0;
+	text-align: center;
+	background-color: $background-color_1;
+	a {
+		color: $color_1;
+		text-decoration: none;
+	}
+}

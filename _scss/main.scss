@@ -7,370 +7,86 @@
 
 ======================================================================================
 */
-/* DEFAULTS */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-* {
-  font-family: 'Ubuntu Mono', Helvetica, Arial, sans-serif;
-  position: relative;
+@import 'defaults';
+@import 'nav';
+@import 'presentation';
+@import 'portfolios';
+@import 'footer';
+@import 'cookies';
 
-  &:focus {
-    outline-style: none;
-  }
-}
-
-html {
-  scroll-behavior: smooth;
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  padding: 0;
-  margin: 0;
-}
-
-/** a{text-decoration:none;color:inherit;cursor:pointer;}**/
-
-p {
-  font-size: 1.1em;
-}
-
-ol, ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-strong {
-  color: #6de862;
-}
-
-.clear {
-  clear: both;
-}
-
-.clear-right {
-  clear: right;
-}
-
-.clear-left {
-  clear: left;
-}
-
-/* :: pseudo elements */
-
-/* KEYFRAMES */
 
 /********** PACK **********/
 
+$color_1: #f6f4f2;
+$color_2: #0ec722;
+
 /* TRANSITIONS */
-
-.fa-instagram, .fa-linkedin-in, .taxon h2, .article a {
-  transition: .1s;
-}
-
-.taxon {
-  transition: .3s;
-
-  &::before {
-    transition: .3s;
-  }
-}
-
 /* USER-SELECT */
-
-a, img {
-  -webkit-user-select: none;
-  -moz-user-select: -moz-none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
 /* FLEX */
-
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.justify-between {
-  justify-content: space-between;
-}
-
-.space-around {
-  justify-content: space-around;
-}
-
-.align-center {
-  align-items: center;
-}
-
 /********** * **********/
-
+.fa-instagram {
+	transition: 0.1s;
+}
+.fa-linkedin-in {
+	transition: 0.1s;
+}
+.site {
+	h2 {
+		transition: 0.1s;
+	}
+	transition: 0.3s;
+	&::before {
+		transition: 0.3s;
+	}
+}
+.article {
+	a {
+		transition: 0.1s;
+	}
+}
+a {
+	-webkit-user-select: none;
+	-moz-user-select: -moz-none;
+	-ms-user-select: none;
+	user-select: none;
+}
+img {
+	-webkit-user-select: none;
+	-moz-user-select: -moz-none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.justify-center {
+	justify-content: center;
+}
+.justify-between {
+	justify-content: space-between;
+}
+.space-around {
+	justify-content: space-around;
+}
+.align-center {
+	align-items: center;
+}
 html {
-  width: 100%;
-  height: 100%;
-  background: #262626;
-  color: #f6f4f2;
-  overflow-x: hidden !important;
+	width: 100%;
+	height: 100%;
+	background: #262626;
+	color: $color_1;
+	overflow-x: hidden !important;
 }
-
 body {
-  width: 100%;
-  min-height: 100%;
-  overflow-x: hidden !important;
+	width: 100%;
+	min-height: 100%;
+	overflow-x: hidden !important;
 }
-
 .active {
-  color: #0ec722;
-}
-
-/********** Nav Bar **********/
-
-nav {
-  background: #393939;
-  border-bottom: 1px solid #686868;
-  width: 100%;
-  height: 36px;
-  padding: 0 150px;
-
-  .reconnexion {
-    margin: 0 30px;
-  }
-
-  .nav-avatar {
-    width: 20px;
-    height: 20px;
-    border-radius: 7px;
-    margin: 7px 5px;
-  }
-
-  a {
-    margin: 7px 0;
-    color: #f6f4f2;
-    text-decoration: none;
-  }
-}
-
-@media (max-width: 720px) {
-  nav {
-    padding: 0 5%;
-  }
-}
-
-/********** Presentation **********/
-
-#pres {
-  width: 95%;
-  margin: 115px auto;
-
-  .avatar {
-    width: 100px;
-    height: 100px;
-    border-radius: 7px;
-    margin: 0 25px 20px 0;
-  }
-
-  .pres-box {
-    padding: 5px 30px;
-    width: 620px;
-    margin: 0 auto;
-    border-left: 2px solid #fff;
-    min-height: 500px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 250px;
-      height: 700px;
-      background-color: #373737;
-      top: -40px;
-      left: -190px;
-      z-index: -1;
-    }
-  }
-}
-
-.pres-box {
-  h1 {
-    font-size: 2em;
-    font-weight: bold;
-  }
-
-  p {
-    text-align: justify;
-  }
-}
-
-.fa-instagram, .fa-linkedin-in {
-  margin: 0 7px;
-  color: #f6f4f2;
-}
-
-.fa-instagram:hover, .fa-linkedin-in:hover {
-  color: #6de862;
-}
-
-#pres .pres-cut {
-  width: 100px;
-  margin: 0 25px;
-}
-
-@media (max-width: 720px) {
-  #pres .pres-box {
-    width: unset;
-  }
-
-  .pres-box p {
-    line-height: 1.2em;
-  }
-}
-
-/********** Observations **********/
-
-#obs {
-  width: 95%;
-  margin: 50px auto;
-
-  .obs-box {
-    width: 620px;
-    margin: 0 auto;
-    min-height: 200px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 450px;
-      height: 35px;
-      background-color: #373737;
-      top: 20px;
-      left: -70px;
-      z-index: -1;
-    }
-  }
-}
-
-.obs-box .taxon {
-  border: 2px solid #dbdbdb;
-  width: 225px;
-  height: 75px;
-  text-align: center;
-  cursor: pointer;
-  margin: 15px 30px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 225px;
-    height: 75px;
-    background-color: #373737;
-    top: 10px;
-    left: 10px;
-    z-index: -1;
-  }
-
-  &:hover {
-    border-bottom-right-radius: 20px;
-
-    &::before {
-      border-bottom-right-radius: 20px;
-    }
-
-    h2 {
-      color: #6de862;
-    }
-  }
-
-  a {
-    color: #f6f4f2;
-    text-decoration: none;
-  }
-}
-
-@media (max-width: 655px) {
-  #obs .obs-box {
-    width: 95%;
-  }
-
-  .sm-wrap {
-    flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 575px) {
-  .obs-box .taxon {
-    margin: 20px 30px;
-  }
-}
-
-/********** Réalisations **********/
-
-#real {
-  width: 95%;
-  margin: 50px auto;
-
-  .real-box {
-    width: 60%;
-    margin: 0 auto;
-    min-height: 200px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 450px;
-      height: 35px;
-      background-color: #373737;
-      top: 20px;
-      left: -70px;
-      z-index: -1;
-    }
-  }
-}
-
-.real-box .article {
-  border: 2px solid #dbdbdb;
-  width: 100%;
-  min-height: 100px;
-  text-align: center;
-  margin: 15px 30px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 570px;
-    height: 40px;
-    top: 6px;
-    left: -147px;
-    z-index: -1;
-    border: 24px solid #373737;
-  }
-
-  a {
-    color: #f6f4f2;
-    text-decoration: none;
-  }
-
-  h3:hover a {
-    color: #6de862 !important;
-  }
-}
-
-@media (max-width: 1160px) {
-  #real .real-box {
-    width: 100%;
-  }
-}
-
-/********** Footer **********/
-
-footer {
-  width: 100%;
-  height: 120px;
-  background-color: #393939;
+	color: $color_2;
 }

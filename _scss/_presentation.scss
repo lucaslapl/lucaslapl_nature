@@ -1,0 +1,71 @@
+$color_1: #f6f4f2;
+$color_2: #6de862;
+$background-color_1: #373737;
+
+/********** Presentation **********/
+#pres {
+	width: 95%;
+	margin: 115px auto;
+	.avatar {
+		width: 100px;
+		height: 100px;
+		border-radius: 7px;
+		margin: 0 25px 20px 0;
+	}
+	.pres-box {
+		padding: 5px 30px;
+		width: 620px;
+		margin: 0 auto;
+		border-left: 2px solid #fff;
+		min-height: 500px;
+		&::before {
+			content: "";
+			position: absolute;
+			width: 250px;
+			height: 700px;
+			background-color: $background-color_1;
+			top: -40px;
+			left: -190px;
+			z-index: -1;
+		}
+	}
+	.pres-cut {
+		width: 100px;
+		margin: 0 25px;
+	}
+}
+.pres-box {
+	h1 {
+		font-size: 2em;
+		font-weight: bold;
+	}
+	p {
+		text-align: justify;
+	}
+}
+.fa-instagram {
+	margin: 0 7px;
+	color: $color_1;
+	&:hover {
+		color: $color_2;
+	}
+}
+.fa-linkedin-in {
+	margin: 0 7px;
+	color: $color_1;
+	&:hover {
+		color: $color_2;
+	}
+}
+@media (max-width: 720px) {
+	#pres {
+		.pres-box {
+			width: unset;
+		}
+	}
+	.pres-box {
+		p {
+			line-height: 1.2em;
+		}
+	}
+}

@@ -1,0 +1,49 @@
+$color_1: #6de862;
+$font-family_1: "Ubuntu Mono", Helvetica, Arial, sans-serif;
+
+/* DEFAULTS */
+/** a{text-decoration:none;color:inherit;cursor:pointer;}**/
+* {
+	font-family: $font-family_1;
+	position: relative;
+	&:focus {
+		outline-style: none;
+	}
+}
+html {
+	scroll-behavior: smooth;
+	padding: 0;
+	margin: 0;
+}
+body {
+	padding: 0;
+	margin: 0;
+}
+p {
+	font-size: 1.1em;
+}
+ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+strong {
+	color: $color_1;
+}
+b {
+	color: $color_1;
+}
+.clear {
+	clear: both;
+}
+.clear-right {
+	clear: right;
+}
+.clear-left {
+	clear: left;
+}

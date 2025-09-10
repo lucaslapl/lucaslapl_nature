@@ -1,0 +1,70 @@
+$color_1: #6de862;
+$background-color_1: #373737;
+
+/********** COOKIES **********/
+#cookies {
+	width: 95%;
+	margin: 115px auto;
+	.cookie-box {
+		padding: 5px 30px;
+		width: 620px;
+		margin: 0 auto;
+		border-left: 2px solid #fff;
+		min-height: 500px;
+		&::before {
+			content: "";
+			position: absolute;
+			width: 250px;
+			height: 700px;
+			background-color: $background-color_1;
+			top: -40px;
+			left: -190px;
+			z-index: -1;
+		}
+	}
+	.cookie-cut {
+		width: 100px;
+		margin: 0 25px;
+	}
+}
+.cookie-box {
+	.fa-cookie-bite {
+		margin-right: 15px;
+	}
+	h1 {
+		font-size: 2em;
+		font-weight: bold;
+	}
+	p {
+		text-align: justify;
+		line-height: 1.3em;
+	}
+	a {
+		color: $color_1;
+	}
+	ul {
+		list-style: disc;
+		padding: 0 0 0 20px;
+	}
+}
+@media (max-width: 720px) {
+	#cookies {
+		.cookie-box {
+			width: unset;
+		}
+	}
+	.cookie-box {
+		p {
+			line-height: 1.2em;
+		}
+	}
+}
+@media (max-width: 520px) {
+	#cookies {
+		.cookie-box {
+			.sm-block {
+				display: block;
+			}
+		}
+	}
+}
